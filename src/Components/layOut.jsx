@@ -5,6 +5,8 @@ import PathOne from './SonComponent/card1'
 import PathTwo from './SonComponent/card2'
 import PathThree from './SonComponent/card3'
 import PathFour from './SonComponent/card4'
+import AddOne from './Add/addOne'
+import Detail from './details/detail'
 import store from '../store/index';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
 import '../ComponentCss/layOut.css'
@@ -26,9 +28,21 @@ class LayOut extends Component {
                         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']} >
                             <Menu.Item key="1">blank</Menu.Item>
                             <Menu.Item key="2">blank2</Menu.Item>
-                            <Menu.Item key="3">查看信息</Menu.Item>
-                            <Menu.Item key="4">添加信息</Menu.Item>
-                            <Menu.Item key="5">返回首页</Menu.Item>
+                            <Menu.Item key="3">
+                                <Link to="detail">
+                                    查看详情
+                                </Link>
+                            </Menu.Item>
+                            <Menu.Item key="4">
+                                <Link to='addOne'>
+                                    添加患者
+                                </Link>
+                            </Menu.Item>
+                            <Menu.Item key="5">
+                                <Link to='icuOne'>
+                                    返回首页
+                                </Link>
+                            </Menu.Item>
 
                         </Menu>
                     </Header>
@@ -98,7 +112,8 @@ class LayOut extends Component {
                                 <Route path='/icuTwo' component={PathTwo}></Route>
                                 <Route path='/icuThree' component={PathThree}></Route>
                                 <Route path='/icuFour' component={PathFour}></Route>
-
+                                <Route path='/addOne' component={AddOne}></Route>
+                                <Route path='/detail' component={Detail}></Route>
                                 <Redirect to='/icuOne'></Redirect>
                             </Content>
                         </Layout>

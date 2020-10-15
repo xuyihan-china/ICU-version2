@@ -6,15 +6,15 @@ class card extends Component {
         this.state = {
             num: 0,
             date: 0,
-            heart: 0,
-            // breath: 0,
-            // blood: 0,
-            // sp: 0,
-            // st: 0
+            heart: 94,
+            breath:89,
+            blood: 130,
+            sp: 99,
+            st: -0.8
         }
         this.changeData = this.changeData.bind(this)
     }
-    componentDidMount(){
+    componentWillMount(){
         this.changeData()
     }
 
