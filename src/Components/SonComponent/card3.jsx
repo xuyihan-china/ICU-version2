@@ -7,15 +7,13 @@ class PathTwo extends Component {
         return (
             <div>
                 <Row className="cardRow">
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
+                    <Col span={12}><Card /></Col>
+                    <Col span={12}><Card /></Col>
                 </Row>
                 
                 <Row className="cardRow">
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
+                    <Col span={12}><Card /></Col>
+                    <Col span={12}><Card /></Col>
                     
                 </Row>
 

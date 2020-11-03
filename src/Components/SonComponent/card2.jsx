@@ -13,10 +13,10 @@ class PathTwo extends Component {
                 </Row>
                 
                 <Row className="cardRow">
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
+                    <Col span={8}><Card /></Col>
+                    <Col span={8}><Card /></Col>
+                    <Col span={8}><Card /></Col>
+                    
                 </Row>
 
                 <Row className="cardRow">
@@ -24,11 +24,6 @@ class PathTwo extends Component {
                     <Col span={8}><Card /></Col>
                     <Col span={8}><Card /></Col>
                 </Row>
-
-                
-
-               
-
             </div>
         )
 
