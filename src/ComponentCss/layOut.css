@@ -8,11 +8,14 @@
     padding-top: 5vw;
     padding-left: 2vw;
 }
-.TopIcon{
+.logo{
+    background-image: url(../image/T--NJMU-China--bei1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: absolute;
-    top:1vh;
+    top:1.4vh;
     left: 1vw;
-    width: 8vw;
-    height: 9vw;
+    width:9vw;
+    height: 1.8vw;
     z-index: 100000;
 }

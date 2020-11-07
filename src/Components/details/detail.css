@@ -1,0 +1,18 @@
+
+    .para{
+        padding: 2vh;
+        font-size: 3vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: darkcyan;
+    }
+    .ant-list-item{
+        font-size: 2vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .center{
+       margin: 0 auto;
+       padding-left:3vw;
+    }
+    .butt{
+        margin-top: 5vw;
+    }

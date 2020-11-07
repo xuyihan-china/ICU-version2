@@ -1,11 +1,12 @@
-.add{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
+h1{
+    font-size: 1.8vw;
+    color: #070707;
+    padding: 30px;
 }
-.inputB{
-    margin-top: 0.5vw ;
-    margin-bottom: 0.5vw ;
+.chartPage{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
 }
 .para{
     padding: 2vh;

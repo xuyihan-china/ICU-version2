@@ -1,15 +1,12 @@
-.add{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-}
-.inputB{
-    margin-top: 0.5vw ;
-    margin-bottom: 0.5vw ;
+h2{
+    padding: 50px;
 }
 .para{
     padding: 2vh;
     font-size: 3vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkcyan;
+}
+.Photo2{
     color: darkcyan;
 }
