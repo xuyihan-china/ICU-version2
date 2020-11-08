@@ -11,11 +11,12 @@ import Detail from './details/detail'
 import store from '../store/index';
 import Alert from './SonComponent/Alert';
 import TrendAnalysis from './trendAnalysis/TrendAnalysis'
-import { UserOutlined, LaptopOutlined, NotificationOutlined, RadarChartOutlined, BranchesOutlined, IdcardOutlined, ReadOutlined, BookOutlined, FireOutlined, FundProjectionScreenOutlined, HeartOutlined } from '@ant-design/icons';
+import { UserOutlined, IdcardOutlined,  FireOutlined, RadarChartOutlined, HeartOutlined } from '@ant-design/icons';
 import '../ComponentCss/layOut.css'
 import FeedBack from './feedBack/FeedBack'
 import RemoteChat from './remoteChat/RemoteChat'
 import Photo  from './Photo/photo'
+import Nursing from './Nursing/Nursing'
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 class LayOut extends Component {
@@ -114,39 +115,29 @@ class LayOut extends Component {
 
                                 </SubMenu>
 
-                                <SubMenu key="sub2" icon={<LaptopOutlined />} title="生命体征">
-                                    <Menu.Item key="5">危重病人1</Menu.Item>
-                                    <Menu.Item key="6">危重病人2</Menu.Item>
-                                    
-                                </SubMenu>
-                                <SubMenu key="sub3" icon={<NotificationOutlined />} title="预警信息">
-                                    <Menu.Item key="7">
-                                        <Link to="alert">
-                                            ICU大厅
-                                        </Link>
-                                    </Menu.Item>
-                                </SubMenu>
+                               
+                                
                                 <Menu.Item icon={<IdcardOutlined />} key="8">
                                     <Link to="photo" >
                                         患者画像
                                     </Link>
                                 </Menu.Item>
-                                <Menu.Item icon={<FundProjectionScreenOutlined />} key="9">
+                                {/* <Menu.Item icon={<FundProjectionScreenOutlined />} key="9">
                                     <Link to="">
                                         重症评分
                                     </Link>
-                                </Menu.Item>
+                                </Menu.Item> */}
                                 <Menu.Item icon={<RadarChartOutlined />} key="10">
                                     <Link to="trendAnalysis" >
                                         趋势分析
                                     </Link>
                                 </Menu.Item>
-                                <Menu.Item icon={<ReadOutlined />} key="11">
+                                {/* <Menu.Item icon={<ReadOutlined />} key="11">
                                     <Link to="">
                                         患者足迹
                                     </Link>
-                                </Menu.Item>
-                                <Menu.Item icon={<BranchesOutlined />} key="12">
+                                </Menu.Item> */}
+                                {/* <Menu.Item icon={<BranchesOutlined />} key="12">
                                     <Link to="">
                                         患者管路
                                     </Link>
@@ -155,15 +146,15 @@ class LayOut extends Component {
                                     <Link to="">
                                         医嘱查询
                                     </Link>
-                                </Menu.Item>
+                                </Menu.Item> */}
                                 <Menu.Item icon={<FireOutlined />} key="14">
-                                    <Link to="">
+                                    <Link to="addOne">
                                         电子病历
                                     </Link>
                                 </Menu.Item>
                                 <Menu.Item icon={<HeartOutlined />} key="15">
-                                    <Link to="">
-                                        护理评互
+                                    <Link to="Nursing">
+                                        护理评级参照
                                     </Link>
                                 </Menu.Item>
                             </Menu>
@@ -189,6 +180,7 @@ class LayOut extends Component {
                                 <Route path='/remoteChat' component={RemoteChat}></Route>
                                 <Route path='/trendAnalysis' component={TrendAnalysis}></Route>
                                 <Route path='/photo' component={Photo}></Route>
+                                <Route path='/Nursing' component={Nursing}></Route>
                                 <Redirect to='/icuOne'></Redirect>
                             </Content>
                         </Layout>

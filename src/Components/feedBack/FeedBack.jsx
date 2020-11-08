@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Card from './cardModel2'
+import Card2 from './cardModel3'
 import { Row, Col } from 'antd'
 import './feedback.css'
 class FeedBack extends Component {
@@ -20,10 +21,10 @@ class FeedBack extends Component {
                 <br></br>
                 <h1>Demo 版本2：生命体征正常显示正常，不显示。生命体征不正常，显示</h1>
                 <Row className="cardRow">
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
-                    <Col span={6}><Card /></Col>
+                    <Col span={6}><Card2 /></Col>
+                    <Col span={6}><Card2 /></Col>
+                    <Col span={6}><Card2 /></Col>
+                    <Col span={6}><Card2 /></Col>
                 </Row>
             </div>
         )
