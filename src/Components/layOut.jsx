@@ -17,6 +17,7 @@ import FeedBack from './feedBack/FeedBack'
 import RemoteChat from './remoteChat/RemoteChat'
 import Photo  from './Photo/photo'
 import Nursing from './Nursing/Nursing'
+import login from './login'
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 class LayOut extends Component {
@@ -27,6 +28,9 @@ class LayOut extends Component {
     }
     logOut = () => {
         ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+    }
+    login =() =>{
+        
     }
     render() {
         return (
@@ -65,11 +69,17 @@ class LayOut extends Component {
                                     返回首页
                                 </Link>
                             </Menu.Item>
+                            <Menu.Item key="9">
+                                <Link to='login' onClick={this.login}>
+                                    登录
+                                </Link>
+                            </Menu.Item>
                             <Menu.Item key="8">
                                 <Link to='icuOne' onClick={this.logOut}>
                                     退出登录
                                 </Link>
                             </Menu.Item>
+                            
 
                         </Menu>
                     </Header>
@@ -181,7 +191,8 @@ class LayOut extends Component {
                                 <Route path='/trendAnalysis' component={TrendAnalysis}></Route>
                                 <Route path='/photo' component={Photo}></Route>
                                 <Route path='/Nursing' component={Nursing}></Route>
-                                <Redirect to='/icuOne'></Redirect>
+                                <Route path='/login' component={login}></Route>
+                                <Redirect to='/login'></Redirect>
                             </Content>
                         </Layout>
                     </Layout>
