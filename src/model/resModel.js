@@ -3,8 +3,8 @@
 class BaseModel {
     constructor(data,message){
         if(typeof data === 'string'){
-            this.message =data;
-            data = null;
+            this.message =data; //data 对象 message 字符串
+            data = null; //但是可以兼容 data 为string
             message = null;
         }
         if(data){

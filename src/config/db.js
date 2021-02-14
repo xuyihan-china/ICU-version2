@@ -3,8 +3,7 @@ env = 'dev' //scripts 中的稍后再改 对不同开发环境下面进行配置
 let MYSQL_CONF
 
 if (env === 'dev') {
-    MYSQL_CONF = {
-        
+    MYSQL_CONF = {  
             host:'localhost',
             user:'root',
             password:'ilovemysql',
