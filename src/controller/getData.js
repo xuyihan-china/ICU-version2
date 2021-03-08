@@ -15,4 +15,4 @@ const getData2 =(keyword1,keyword2) =>{ //query的值
     const sql = 'select * from user;'
     return exec(sql)
 }
-module.exports ={getData}
+module.exports ={getData,getData2}
