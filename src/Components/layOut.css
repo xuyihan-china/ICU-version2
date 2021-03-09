@@ -17,3 +17,24 @@
   .ant-layout{
     height: 100% !important;
   }
+  .flex{
+    display: flex;
+}
+.flexItem{
+    align-items:space-around;
+}
+.cardRow{
+    padding-top: 5vw;
+    padding-left: 2vw;
+}
+.logo{
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:1.4vh;
+    left: 1vw;
+    width:8vw;
+    height: 2vw;
+    z-index: 100000;
+}

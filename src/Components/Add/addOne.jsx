@@ -6,7 +6,7 @@ import InputNumber from './IntNumber'
 import FileUpload from './fileUpload'
 import Rate from './Rate'
 import { Button } from 'antd'
-import '../../ComponentCss/addOne.css'
+import './addOne.css'
 import { Popconfirm, message } from 'antd';
 import store from '../../store/index'
 class AddOne extends Component {
