@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 const { TextArea } = Input;
 
 class Demo extends Component {
-//   state = {
-//     value: '',
-//   };
+  state = {
+    value: '',
+  };
 
-//   onChange = ({ target: { value } }) => {
-//     this.setState({ value });
-//   };
+  onChange = ({ target: { value } }) => {
+    this.setState({ value });
+  };
 
   render() {
     //const { value } = this.state;
@@ -17,7 +17,7 @@ class Demo extends Component {
     return (
       <>
         
-        <TextArea placeholder="输入患者病历信息" autoSize />
+        <TextArea placeholder="输入患者病历信息" showCount='true' autoSize={{ minRows: 3, maxRows: 5 }} allowClear style={{width:'80%' ,marginLeft:'3.8vw'}}/>
         <div style={{ margin: '24px 0' }} />
       </>
     );

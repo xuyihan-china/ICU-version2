@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './layOut.css'
 import ReactDOM from 'react-dom'
 import { Layout, Menu, Breadcrumb } from 'antd'
 import { Link, Route, Redirect } from 'react-router-dom'
@@ -11,13 +12,16 @@ import Detail from './details/detail'
 import store from '../store/index';
 import Alert from './SonComponent/Alert';
 import TrendAnalysis from './trendAnalysis/TrendAnalysis'
-import { UserOutlined, IdcardOutlined,  FireOutlined, RadarChartOutlined, HeartOutlined } from '@ant-design/icons';
+import { UserOutlined, IdcardOutlined,  FireOutlined, RadarChartOutlined, HeartOutlined,ReadOutlined,BranchesOutlined,BookOutlined } from '@ant-design/icons';
 import '../ComponentCss/layOut.css'
 import FeedBack from './feedBack/FeedBack'
 import RemoteChat from './remoteChat/RemoteChat'
 import Photo  from './Photo/photo'
 import Nursing from './Nursing/Nursing'
 import login from './login'
+import DocSay from './findDocSay/DocSay'
+import Record from './Record/Record'
+import HospitalRec from './HospitalRec/HospitalRec'
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 class LayOut extends Component {
@@ -35,7 +39,7 @@ class LayOut extends Component {
     render() {
         return (
             <div className="rootComponent">
-                <Layout>
+                <Layout >
                     <Header className="header" style={{ position: 'fixed', zIndex: 1, width: '100%' }} >
                         
                         
@@ -61,7 +65,7 @@ class LayOut extends Component {
                             </Menu.Item>
                             <Menu.Item key="6">
                                 <Link to='remoteChat'>
-                                    在线远程会诊
+                                    实时详情
                                 </Link>
                             </Menu.Item>
                             <Menu.Item key="7">
@@ -83,7 +87,7 @@ class LayOut extends Component {
 
                         </Menu>
                     </Header>
-                    <Layout >
+                    <Layout style={{height:'100%'}}>
                         <Sider width={200} className="site-layout-background" style={{
                             overflow: 'auto',
                             height: '100vh',
@@ -91,7 +95,7 @@ class LayOut extends Component {
                             left: 0,
                             zIndex: 1,
                             paddingTop: 64
-                        }}>
+                        }} >
                             <div className="logo" />
                             <Menu
                                 mode="inline"
@@ -142,21 +146,21 @@ class LayOut extends Component {
                                         趋势分析
                                     </Link>
                                 </Menu.Item>
-                                {/* <Menu.Item icon={<ReadOutlined />} key="11">
-                                    <Link to="">
-                                        患者足迹
+                               <Menu.Item icon={<ReadOutlined />} key="11">
+                                    <Link to="/HospitalRec">
+                                        住院病历
                                     </Link>
-                                </Menu.Item> */}
-                                {/* <Menu.Item icon={<BranchesOutlined />} key="12">
-                                    <Link to="">
-                                        患者管路
+                                </Menu.Item> 
+                                <Menu.Item icon={<BranchesOutlined />} key="12">
+                                    <Link to="/Record">
+                                        病程记录
                                     </Link>
                                 </Menu.Item>
                                 <Menu.Item icon={<BookOutlined />} key="13">
-                                    <Link to="">
+                                    <Link to="DocSay">
                                         医嘱查询
                                     </Link>
-                                </Menu.Item> */}
+                                </Menu.Item> 
                                 <Menu.Item icon={<FireOutlined />} key="14">
                                     <Link to="addOne">
                                         电子病历
@@ -177,7 +181,7 @@ class LayOut extends Component {
                             </Breadcrumb>
                             <Content
                                 className="site-layout-background"
-                                style={{ margin: '24px 16px 24px 224px', overflow: 'initial', backgroundColor: '#e6f7ff' }}
+                                style={{ margin: '24px 16px 24px 224px', overflow: 'initial', backgroundColor: '#e6f7ff' ,height:'100%'}}
                             >
                                 <Route path='/icuOne' component={PathOne}></Route>
                                 <Route path='/icuTwo' component={PathTwo}></Route>
@@ -192,7 +196,10 @@ class LayOut extends Component {
                                 <Route path='/photo' component={Photo}></Route>
                                 <Route path='/Nursing' component={Nursing}></Route>
                                 <Route path='/login' component={login}></Route>
-                                <Redirect to='/login'></Redirect>
+                                <Route path='/DocSay' component={DocSay}></Route>
+                                <Route path='/Record' component={Record}></Route>
+                                <Route path='/HospitalRec' component={HospitalRec}></Route>
+                                <Redirect to='/addOne'></Redirect>
                             </Content>
                         </Layout>
                     </Layout>

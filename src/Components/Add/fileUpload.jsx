@@ -22,14 +22,13 @@ const props = {
 class Uploads extends Component {
   render(){
       return(
-        <Dragger {...props}>
+        <Dragger {...props} style={{width:'80%',paddingLeft:'3.8vw'}}>
         <p className="ant-upload-drag-icon">
             <InboxOutlined />
         </p>
-        <p className="ant-upload-text">Click or drag file to this area to upload</p>
+        <p className="ant-upload-text">点击或者拖动文件来上传</p>
         <p className="ant-upload-hint">
-            Support for a single or bulk upload. Strictly prohibit from uploading company data or other
-            band files
+            
         </p>
       </Dragger>
       )
