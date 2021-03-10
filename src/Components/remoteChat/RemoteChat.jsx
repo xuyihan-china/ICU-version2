@@ -10,7 +10,6 @@ class RemoteChat extends Component {
         return ( 
             <div>
                 <h1>visible part</h1>
-            
             </div>
          );
     }

@@ -13,12 +13,12 @@ import store from '../store/index';
 import Alert from './SonComponent/Alert';
 import TrendAnalysis from './trendAnalysis/TrendAnalysis'
 import { UserOutlined, IdcardOutlined,  FireOutlined, RadarChartOutlined, HeartOutlined,ReadOutlined,BranchesOutlined,BookOutlined } from '@ant-design/icons';
-import '../ComponentCss/layOut.css'
+//mport '../ComponentCss/layOut.css'
 import FeedBack from './feedBack/FeedBack'
 import RemoteChat from './remoteChat/RemoteChat'
 import Photo  from './Photo/photo'
 import Nursing from './Nursing/Nursing'
-import login from './login/login'
+import login from '../Components/login/login'
 import DocSay from './findDocSay/DocSay'
 import Record from './Record/Record'
 import HospitalRec from './HospitalRec/HospitalRec'
@@ -74,7 +74,7 @@ class LayOut extends Component {
                                 </Link>
                             </Menu.Item>
                             <Menu.Item key="9">
-                                <Link to='login' onClick={this.login}>
+                                <Link to='/api/user/login' onClick={this.login}>
                                     登录
                                 </Link>
                             </Menu.Item>
@@ -147,12 +147,12 @@ class LayOut extends Component {
                                     </Link>
                                 </Menu.Item>
                                <Menu.Item icon={<ReadOutlined />} key="11">
-                                    <Link to="/HospitalRec">
+                                    <Link to="HospitalRec">
                                         住院病历
                                     </Link>
                                 </Menu.Item> 
                                 <Menu.Item icon={<BranchesOutlined />} key="12">
-                                    <Link to="/Record">
+                                    <Link to="Record">
                                         病程记录
                                     </Link>
                                 </Menu.Item>
@@ -183,23 +183,23 @@ class LayOut extends Component {
                                 className="site-layout-background"
                                 style={{ margin: '24px 16px 24px 224px', overflow: 'initial', backgroundColor: '#e6f7ff' ,height:'100%'}}
                             >
-                                <Route path='/icuOne' component={PathOne}></Route>
-                                <Route path='/icuTwo' component={PathTwo}></Route>
-                                <Route path='/icuThree' component={PathThree}></Route>
-                                <Route path='/icuFour' component={PathFour}></Route>
-                                <Route path='/addOne' component={AddOne}></Route>
-                                <Route path='/detail' component={Detail}></Route>
-                                <Route path='/alert' component={Alert}></Route>
-                                <Route path='/feedBack' component={FeedBack}></Route>
-                                <Route path='/remoteChat' component={RemoteChat}></Route>
-                                <Route path='/trendAnalysis' component={TrendAnalysis}></Route>
-                                <Route path='/photo' component={Photo}></Route>
-                                <Route path='/Nursing' component={Nursing}></Route>
-                                <Route path='/login' component={login}></Route>
-                                <Route path='/DocSay' component={DocSay}></Route>
-                                <Route path='/Record' component={Record}></Route>
-                                <Route path='/HospitalRec' component={HospitalRec}></Route>
-                                <Redirect to='/addOne'></Redirect>
+                                <Route path='/api/user/icuOne' component={PathOne}></Route>
+                                <Route path='/api/user/icuTwo' component={PathTwo}></Route>
+                                <Route path='/api/user/icuThree' component={PathThree}></Route>
+                                <Route path='/api/user/icuFour' component={PathFour}></Route>
+                                <Route path='/api/user/addOne' component={AddOne}></Route>
+                                <Route path='/api/user/detail' component={Detail}></Route>
+                                <Route path='/api/user/alert' component={Alert}></Route>
+                                <Route path='/api/user/feedBack' component={FeedBack}></Route>
+                                <Route path='/api/user/remoteChat' component={RemoteChat}></Route>
+                                <Route path='/api/user/trendAnalysis' component={TrendAnalysis}></Route>
+                                <Route path='/api/user/photo' component={Photo}></Route>
+                                <Route path='/api/user/Nursing' component={Nursing}></Route>
+                                <Route path='/api/user/login' component={login}></Route>
+                                <Route path='/api/user/DocSay' component={DocSay}></Route>
+                                <Route path='/api/user/Record' component={Record}></Route>
+                                <Route path='/api/user/HospitalRec' component={HospitalRec}></Route>
+                                <Redirect to='/api/user/login'></Redirect>
                             </Content>
                         </Layout>
                     </Layout>

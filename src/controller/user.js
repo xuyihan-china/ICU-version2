@@ -4,10 +4,14 @@ const login = (username, password) =>{
     const sql =    `
         select username ,password from users where username = '${username}' and password = '${password}'
     `
-    return exec(sql).then(
-        rows =>{
+        return exec(sql).then(rows => {
+            if(rows[0] == void 0){ //要判断是否为0 void
+                rows[0] = {}
+            }
             return rows[0]
-        }
-    )
-}
-module.exports = {login}
+        })
+    }
+    
+    module.exports = {
+        login
+    }
