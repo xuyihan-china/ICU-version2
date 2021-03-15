@@ -20,5 +20,5 @@ function exec(sql){
     return promise
 }
 module.exports={
-    exec
+    exec 
 }

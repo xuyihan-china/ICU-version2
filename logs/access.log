@@ -1,0 +1,2 @@
+GET -- /api/user/login -- Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36 -- 1615423535893
+GET -- /api/user/login?username=zhangsan&&password=aa -- Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36 -- 1615423539550

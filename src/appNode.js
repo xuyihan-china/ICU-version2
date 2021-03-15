@@ -2,6 +2,7 @@ process.env.NODE_ENV = 'dev'
 const queryString = require('querystring')
 const user = require('./controller/user')
 const {get,set} = require('./db/redis')
+const {access} = require('./utils/log.js')
 const handleBlogRouter = require('./router/url')
 const handleUserRouter = require('./router/user')
 //const {SuccessModel,ErrorModel} = require('./model/resModel')
@@ -42,6 +43,12 @@ const getPostData = (req) =>{
 
 
 const serverHandle =(req,res)=>{
+    //记录access log
+    access(
+      `${req.method} -- ${req.url} -- ${req.headers['user-agent']} -- ${Date.now()}`
+    )  
+
+
     res.setHeader('Content-type','application/json')//res 格式是 json格式
     const url = req.url;
     req.path = url.split('?')[0]
