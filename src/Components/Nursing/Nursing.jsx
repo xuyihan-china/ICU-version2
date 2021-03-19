@@ -52,7 +52,7 @@ class Nursing extends Component {
                 <p className="nus-ant">1、病重期急性症状消失，大手术后病情稳定，但生活不能自理者；<br />
 2、年老体弱或慢性病患者；<br />
 3、普通手术后或轻型子痫等。</p>
-                <h3>护理要求</h3>
+                <h3 className="subTitle">护理要求</h3>
                 <p className="nus-ant">1、注意观察病情，观察特殊治疗或特殊用药后的反应及效果，每2h巡视一次。<br />
 2、根据病情可在床上或室内轻度活动。<br />
 3、协助病人做好晨、晚间护理。<br />

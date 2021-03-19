@@ -65,7 +65,7 @@ class LayOut extends Component {
                             </Menu.Item>
                             <Menu.Item key="6">
                                 <Link to='remoteChat'>
-                                    实时详情
+                                    可视化数据
                                 </Link>
                             </Menu.Item>
                             <Menu.Item key="7">
@@ -148,7 +148,7 @@ class LayOut extends Component {
                                 </Menu.Item>
                                <Menu.Item icon={<ReadOutlined />} key="11">
                                     <Link to="HospitalRec">
-                                        住院病历
+                                        疾病报告
                                     </Link>
                                 </Menu.Item> 
                                 <Menu.Item icon={<BranchesOutlined />} key="12">
@@ -183,23 +183,23 @@ class LayOut extends Component {
                                 className="site-layout-background"
                                 style={{ margin: '24px 16px 24px 224px', overflow: 'initial', backgroundColor: '#e6f7ff' ,height:'100%'}}
                             >
-                                <Route path='/api/user/icuOne' component={PathOne}></Route>
-                                <Route path='/api/user/icuTwo' component={PathTwo}></Route>
-                                <Route path='/api/user/icuThree' component={PathThree}></Route>
-                                <Route path='/api/user/icuFour' component={PathFour}></Route>
-                                <Route path='/api/user/addOne' component={AddOne}></Route>
-                                <Route path='/api/user/detail' component={Detail}></Route>
-                                <Route path='/api/user/alert' component={Alert}></Route>
-                                <Route path='/api/user/feedBack' component={FeedBack}></Route>
-                                <Route path='/api/user/remoteChat' component={RemoteChat}></Route>
-                                <Route path='/api/user/trendAnalysis' component={TrendAnalysis}></Route>
-                                <Route path='/api/user/photo' component={Photo}></Route>
-                                <Route path='/api/user/Nursing' component={Nursing}></Route>
-                                <Route path='/api/user/login' component={login}></Route>
-                                <Route path='/api/user/DocSay' component={DocSay}></Route>
-                                <Route path='/api/user/Record' component={Record}></Route>
-                                <Route path='/api/user/HospitalRec' component={HospitalRec}></Route>
-                                <Redirect to='/api/user/login'></Redirect>
+                                <Route path='/user/icuOne' component={PathOne}></Route>
+                                <Route path='/user/icuTwo' component={PathTwo}></Route>
+                                <Route path='/user/icuThree' component={PathThree}></Route>
+                                <Route path='/user/icuFour' component={PathFour}></Route>
+                                <Route path='/user/addOne' component={AddOne}></Route>
+                                <Route path='/user/detail' component={Detail}></Route>
+                                <Route path='/user/alert' component={Alert}></Route>
+                                <Route path='/user/feedBack' component={FeedBack}></Route>
+                                <Route path='/user/remoteChat' component={RemoteChat}></Route>
+                                <Route path='/user/trendAnalysis' component={TrendAnalysis}></Route>
+                                <Route path='/user/photo' component={Photo}></Route>
+                                <Route path='/user/Nursing' component={Nursing}></Route>
+                                <Route path='/user/login' component={login}></Route>
+                                <Route path='/user/DocSay' component={DocSay}></Route>
+                                <Route path='/user/Record' component={Record}></Route>
+                                <Route path='/user/HospitalRec' component={HospitalRec}></Route>
+                                <Redirect to='/user/login'></Redirect>
                             </Content>
                         </Layout>
                     </Layout>

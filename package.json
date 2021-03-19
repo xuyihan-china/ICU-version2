@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@antv/g2": "^4.0.15",
+    "@antv/g2plot": "^2.3.16",
+    "@antv/g6": "^4.2.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -25,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "cross-env NODE_ENV=dev nodemon ./bin/www.js",
-    "prod": "cross-env NODE_ENV=production nodemon ./bin/www.js"
+    "prod": "cross-env NODE_ENV=production nodemon ./bin/www.js",
+    "aa": "nodemon ./src/www.js"
   },
   "eslintConfig": {
     "extends": "react-app"

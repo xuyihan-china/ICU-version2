@@ -88,10 +88,16 @@ class AddOne extends Component {
                 <FileUpload />
                 </div>
                 <br/>
-                <p className="add">&nbsp;&nbsp;护理等级</p>
+                <p className="add" >&nbsp;&nbsp;护理等级</p>
+                <div style={{paddingLeft:'3.8vw'}}>
                 
                 <Rate count={4} />
+                </div>
+                
+                
+                
                 <br />
+                <div style={{paddingLeft:'2.8vw'}}>
                 <Button type='primary' style={{ margin: '0 auto' }} onClick={this.alert}>
                     <Popconfirm
                         title="你确定要提交数据吗?"
@@ -103,6 +109,8 @@ class AddOne extends Component {
                         <a href="####">提交表单</a>
                     </Popconfirm>
                 </Button>
+                </div>
+                
                 <br /><br /><br />
             </div>
         )

@@ -1,5 +1,5 @@
 h2{
-    padding: 50px;
+    padding: 70px;
 }
 .para{
     padding: 2vh;
@@ -8,5 +8,19 @@ h2{
     color: darkcyan;
 }
 .Photo2{
-    color: darkcyan;
+    color: rgb(28, 31, 31);
+    font-weight: bold;
 }
+
+/* .secLeft{
+    background-color: aliceblue;
+    width: 35vw;
+    border-radius: 25px;
+    padding-left: 7vw;
+    margin-left: 7vw;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.secLeft:hover{
+    
+} */
