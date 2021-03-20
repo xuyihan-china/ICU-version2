@@ -291,7 +291,7 @@ class RemoteChat extends Component {
 
     ////////////////////////////////////////////////////
     
-    fetch('https://gw.alipayobjects.com/os/antvdemo/assets/data/antv-keywords.json')
+    fetch('./data.json')
     .then((res) => res.json())
     .then((data) => {
     const wordCloud = new WordCloud('container4', {
