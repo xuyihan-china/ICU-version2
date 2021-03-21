@@ -12,7 +12,7 @@ import Detail from './details/detail'
 import store from '../store/index';
 import Alert from './SonComponent/Alert';
 import TrendAnalysis from './trendAnalysis/TrendAnalysis'
-import { UserOutlined, IdcardOutlined,  FireOutlined, RadarChartOutlined, HeartOutlined,ReadOutlined,BranchesOutlined,BookOutlined } from '@ant-design/icons';
+import { UserOutlined, IdcardOutlined,  FireOutlined, RadarChartOutlined, HeartOutlined,ReadOutlined,BookOutlined } from '@ant-design/icons';
 //mport '../ComponentCss/layOut.css'
 import FeedBack from './feedBack/FeedBack'
 import RemoteChat from './remoteChat/RemoteChat'
@@ -49,7 +49,7 @@ class LayOut extends Component {
                             {/* link to = xxx url  route =>{ path =xxx} */}
                             <Menu.Item key="3">
                                 <Link to="detail">
-                                    时间规划表
+                                    ICU时间规划
                                 </Link>
                             </Menu.Item>
                             <Menu.Item key="4">
@@ -65,7 +65,7 @@ class LayOut extends Component {
                             </Menu.Item>
                             <Menu.Item key="6">
                                 <Link to='remoteChat'>
-                                    可视化数据
+                                    ICU病例统计
                                 </Link>
                             </Menu.Item>
                             <Menu.Item key="7">
@@ -133,7 +133,7 @@ class LayOut extends Component {
                                 
                                 <Menu.Item icon={<IdcardOutlined />} key="8">
                                     <Link to="photo" >
-                                        患者画像
+                                        ICU患者画像
                                     </Link>
                                 </Menu.Item>
                                 {/* <Menu.Item icon={<FundProjectionScreenOutlined />} key="9">
@@ -143,7 +143,7 @@ class LayOut extends Component {
                                 </Menu.Item> */}
                                 <Menu.Item icon={<RadarChartOutlined />} key="10">
                                     <Link to="trendAnalysis" >
-                                        趋势分析
+                                        ICU在院情况
                                     </Link>
                                 </Menu.Item>
                                <Menu.Item icon={<ReadOutlined />} key="11">
@@ -151,14 +151,14 @@ class LayOut extends Component {
                                         疾病报告
                                     </Link>
                                 </Menu.Item> 
-                                <Menu.Item icon={<BranchesOutlined />} key="12">
+                                {/* <Menu.Item icon={<BranchesOutlined />} key="12">
                                     <Link to="Record">
                                         病程记录
                                     </Link>
-                                </Menu.Item>
+                                </Menu.Item> */}
                                 <Menu.Item icon={<BookOutlined />} key="13">
                                     <Link to="DocSay">
-                                        医嘱查询
+                                        可视化异常检测
                                     </Link>
                                 </Menu.Item> 
                                 <Menu.Item icon={<FireOutlined />} key="14">

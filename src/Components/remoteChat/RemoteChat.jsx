@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { WordCloud } from "@antv/g2plot";
 import { Chart } from "@antv/g2";
 import "./RemoteChat.css";
 //import { Input } from 'antd';
@@ -10,18 +9,18 @@ class RemoteChat extends Component {
   }
   componentDidMount = () => {
     const data = [
-      { year: "2010", population: 41.8 },
-      { year: "2011", population: 38 },
-      { year: "2012", population: 33.7 },
-      { year: "2013", population: 30.7 },
-      { year: "2014", population: 25.8 },
-      { year: "2015", population: 31.7 },
-      { year: "2016", population: 33 },
-      { year: "2017", population: 46 },
-      { year: "2018", population: 38.3 },
-      { year: "2019", population: 28 },
-      { year: "2020", population: 42.5 },
-      { year: "2021", population: 30.3 },
+      { year: "2010", population: 6180 },
+      { year: "2011", population: 3800 },
+      { year: "2012", population: 6370 },
+      { year: "2013", population: 3077 },
+      { year: "2014", population: 7870 },
+      { year: "2015", population: 3170 },
+      { year: "2016", population: 6300 },
+      { year: "2017", population: 4600 },
+      { year: "2018", population: 7830 },
+      { year: "2019", population: 8800 },
+      { year: "2020", population: 4250 },
+      { year: "2021", population: 3030 },
     ];
 
     const chart = new Chart({
@@ -291,40 +290,21 @@ class RemoteChat extends Component {
 
     ////////////////////////////////////////////////////
     
-    fetch('./data.json')
-    .then((res) => res.json())
-    .then((data) => {
-    const wordCloud = new WordCloud('container4', {
-      data,
-      wordField: 'name',
-      weightField: 'value',
-      colorField: 'name',
-      wordStyle: {
-        fontFamily: 'Verdana',
-        fontSize: [14, 52],
-        rotation: 0,
-      },
-      // 返回值设置成一个 [0, 1) 区间内的值，
-      // 可以让每次渲染的位置相同（前提是每次的宽高一致）。
-      random: () => 0.5,
-    });
-
-    wordCloud.render();
-  });
+    
         
       
   };
   render() {
     return (
       <div>
-        <h1>年度就诊人数</h1>
+        <h1>ICU年度就诊人数</h1>
         <div id="container"></div>
         <h1>接诊医师人次</h1>
         <div id="container2"></div>
         <h1>科室床位使用率及平均住院日</h1>
         <div id="container3"></div>
-        <h1>大数据词图云</h1>
-        <div id="container4"></div>
+        <h1>患者患病大数据词图云</h1>
+        <img src={require('./cty.png')} alt="" style={{width:'100%'}}/>
       </div>
     );
   }

@@ -136,7 +136,7 @@ chart4
   })
   .text({
     position: ['50%', '50%'],
-    content: '453',
+    content: '4533',
     style: {
       fontSize: 20,
       fill: '#8c8c8c',
@@ -186,16 +186,16 @@ chart4.render();
             <div>
                 <section>
                   <h1>趋势分析模块介绍</h1>
-                  <p className="para">&nbsp;&nbsp;&nbsp;&nbsp;采用数据可视化方案,利用交互性较高的ant-V建立图表,主要分析：出院人数，在住人数，剩余床位，本月收治，本月出院 5个指标。包括本周趋势分析，月度趋势分析。</p>
+                  <p className="para">&nbsp;&nbsp;&nbsp;&nbsp;采用数据可视化方案,利用交互性较高的ant-V建立图表,分析医院就诊趋势变化</p>
                 </section>
-                <h1 >医院本周趋势分析</h1>
+                <h1 >ICU本周趋势分析</h1>
                 <div id="c1" className="chatPage">
                 </div>
-                <h1>医院月度趋势分析</h1>
+                <h1>ICU月度趋势分析</h1>
                 <div id="c2" className="chatPage"></div>
-                <h1>医院治愈率分析</h1>
+                <h1>ICU治愈率分析</h1>
                 <div id="container3"></div>
-                <h1>住院年龄分布</h1>
+                <h1>ICU住院年龄分布</h1>
                 <div id="container4"></div>
             </div>
          );

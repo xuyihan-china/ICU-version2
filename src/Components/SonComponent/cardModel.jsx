@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Card } from 'antd'
+import { Link } from 'react-router-dom'
 class card extends Component {
     constructor(props) {
         super(props)
@@ -46,7 +47,7 @@ class card extends Component {
                 {/* <Button onClick={this.changeData}>开始</Button> */}
                 <Card style={{ width: 300 }}
                     hoverable={true}
-                    extra={"移除患者"}
+                    extra={<Link to="/user/DocSay">查看详情</Link>}
                     title={
                         "ICU patient"
                     }

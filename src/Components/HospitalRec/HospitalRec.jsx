@@ -35,7 +35,7 @@ class HospitalRec extends Component{
             .interval()
             .adjust('stack')
             .position('value')
-            .color('type', ['#063d8a', '#1770d6', '#47abfc', '#38c060','#cf1322','#871400','#612500','#a0d911','#ffadd2','#08979c'])
+            .color('type')
             .style({ opacity: 0.4 })
             .state({
               active: {
@@ -143,7 +143,7 @@ class HospitalRec extends Component{
     render(){
         return(
             <div>
-                <h2 className="para">就诊疾病top10</h2>
+                <h2 className="para">近一周内ICU就诊疾病top10</h2>
                 <div id="container"></div>
                 <h2 className="para">
                     重症医学ICU质量检测
