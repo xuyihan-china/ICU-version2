@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.0bf2a970.chunk.css",
-    "main.js": "./static/js/main.9a7dbc1c.chunk.js",
-    "main.js.map": "./static/js/main.9a7dbc1c.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.82801e40.js",
-    "runtime-main.js.map": "./static/js/runtime-main.82801e40.js.map",
-    "static/css/2.220ccb42.chunk.css": "./static/css/2.220ccb42.chunk.css",
-    "static/js/2.064148f2.chunk.js": "./static/js/2.064148f2.chunk.js",
-    "static/js/2.064148f2.chunk.js.map": "./static/js/2.064148f2.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.ed829b3fee278fdf8f8f7e226f52b6ca.js": "./precache-manifest.ed829b3fee278fdf8f8f7e226f52b6ca.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/2.220ccb42.chunk.css.map": "./static/css/2.220ccb42.chunk.css.map",
-    "static/css/main.0bf2a970.chunk.css.map": "./static/css/main.0bf2a970.chunk.css.map",
-    "static/js/2.064148f2.chunk.js.LICENSE.txt": "./static/js/2.064148f2.chunk.js.LICENSE.txt",
-    "static/media/cty.png": "./static/media/cty.53544067.png",
-    "static/media/layOut.css": "./static/media/logo.bd8eedef.png"
+    "main.css": "/xuyihan-china/ICU-version2/static/css/main.26486075.chunk.css",
+    "main.js": "/xuyihan-china/ICU-version2/static/js/main.d18876fd.chunk.js",
+    "main.js.map": "/xuyihan-china/ICU-version2/static/js/main.d18876fd.chunk.js.map",
+    "runtime-main.js": "/xuyihan-china/ICU-version2/static/js/runtime-main.6eb6be07.js",
+    "runtime-main.js.map": "/xuyihan-china/ICU-version2/static/js/runtime-main.6eb6be07.js.map",
+    "static/css/2.220ccb42.chunk.css": "/xuyihan-china/ICU-version2/static/css/2.220ccb42.chunk.css",
+    "static/js/2.326ce48a.chunk.js": "/xuyihan-china/ICU-version2/static/js/2.326ce48a.chunk.js",
+    "static/js/2.326ce48a.chunk.js.map": "/xuyihan-china/ICU-version2/static/js/2.326ce48a.chunk.js.map",
+    "index.html": "/xuyihan-china/ICU-version2/index.html",
+    "precache-manifest.f088ea78d18b8c199df3c3dec6fcd154.js": "/xuyihan-china/ICU-version2/precache-manifest.f088ea78d18b8c199df3c3dec6fcd154.js",
+    "service-worker.js": "/xuyihan-china/ICU-version2/service-worker.js",
+    "static/css/2.220ccb42.chunk.css.map": "/xuyihan-china/ICU-version2/static/css/2.220ccb42.chunk.css.map",
+    "static/css/main.26486075.chunk.css.map": "/xuyihan-china/ICU-version2/static/css/main.26486075.chunk.css.map",
+    "static/js/2.326ce48a.chunk.js.LICENSE.txt": "/xuyihan-china/ICU-version2/static/js/2.326ce48a.chunk.js.LICENSE.txt",
+    "static/media/cty.png": "/xuyihan-china/ICU-version2/static/media/cty.53544067.png",
+    "static/media/layOut.css": "/xuyihan-china/ICU-version2/static/media/logo.bd8eedef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.82801e40.js",
+    "static/js/runtime-main.6eb6be07.js",
     "static/css/2.220ccb42.chunk.css",
-    "static/js/2.064148f2.chunk.js",
-    "static/css/main.0bf2a970.chunk.css",
-    "static/js/main.9a7dbc1c.chunk.js"
+    "static/js/2.326ce48a.chunk.js",
+    "static/css/main.26486075.chunk.css",
+    "static/js/main.d18876fd.chunk.js"
   ]
 }

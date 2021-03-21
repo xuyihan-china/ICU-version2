@@ -185,7 +185,7 @@ chart4.render();
         return ( 
             <div>
                 <section>
-                  <h1>趋势分析模块介绍</h1>
+                  <h1>ICU在院情况介绍</h1>
                   <p className="para">&nbsp;&nbsp;&nbsp;&nbsp;采用数据可视化方案,利用交互性较高的ant-V建立图表,分析医院就诊趋势变化</p>
                 </section>
                 <h1 >ICU本周趋势分析</h1>
