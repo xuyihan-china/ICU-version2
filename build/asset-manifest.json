@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/icu-version2/static/css/main.f83ef316.chunk.css",
-    "main.js": "/icu-version2/static/js/main.95d0e591.chunk.js",
-    "main.js.map": "/icu-version2/static/js/main.95d0e591.chunk.js.map",
-    "runtime-main.js": "/icu-version2/static/js/runtime-main.654a5d1b.js",
-    "runtime-main.js.map": "/icu-version2/static/js/runtime-main.654a5d1b.js.map",
-    "static/css/2.220ccb42.chunk.css": "/icu-version2/static/css/2.220ccb42.chunk.css",
-    "static/js/2.dd5df96f.chunk.js": "/icu-version2/static/js/2.dd5df96f.chunk.js",
-    "static/js/2.dd5df96f.chunk.js.map": "/icu-version2/static/js/2.dd5df96f.chunk.js.map",
-    "index.html": "/icu-version2/index.html",
-    "precache-manifest.a78a2903cfbb506b5f8ca369a7983436.js": "/icu-version2/precache-manifest.a78a2903cfbb506b5f8ca369a7983436.js",
-    "service-worker.js": "/icu-version2/service-worker.js",
-    "static/css/2.220ccb42.chunk.css.map": "/icu-version2/static/css/2.220ccb42.chunk.css.map",
-    "static/css/main.f83ef316.chunk.css.map": "/icu-version2/static/css/main.f83ef316.chunk.css.map",
-    "static/js/2.dd5df96f.chunk.js.LICENSE.txt": "/icu-version2/static/js/2.dd5df96f.chunk.js.LICENSE.txt",
-    "static/media/cty.png": "/icu-version2/static/media/cty.53544067.png",
-    "static/media/layOut.css": "/icu-version2/static/media/logo.bd8eedef.png"
+    "main.css": "/ICU-version2/static/css/main.4f1d6332.chunk.css",
+    "main.js": "/ICU-version2/static/js/main.6e71c396.chunk.js",
+    "main.js.map": "/ICU-version2/static/js/main.6e71c396.chunk.js.map",
+    "runtime-main.js": "/ICU-version2/static/js/runtime-main.0d3dccbf.js",
+    "runtime-main.js.map": "/ICU-version2/static/js/runtime-main.0d3dccbf.js.map",
+    "static/css/2.220ccb42.chunk.css": "/ICU-version2/static/css/2.220ccb42.chunk.css",
+    "static/js/2.08f56c4b.chunk.js": "/ICU-version2/static/js/2.08f56c4b.chunk.js",
+    "static/js/2.08f56c4b.chunk.js.map": "/ICU-version2/static/js/2.08f56c4b.chunk.js.map",
+    "index.html": "/ICU-version2/index.html",
+    "precache-manifest.8a7a07ec9a687bc11ef5706477d8fff0.js": "/ICU-version2/precache-manifest.8a7a07ec9a687bc11ef5706477d8fff0.js",
+    "service-worker.js": "/ICU-version2/service-worker.js",
+    "static/css/2.220ccb42.chunk.css.map": "/ICU-version2/static/css/2.220ccb42.chunk.css.map",
+    "static/css/main.4f1d6332.chunk.css.map": "/ICU-version2/static/css/main.4f1d6332.chunk.css.map",
+    "static/js/2.08f56c4b.chunk.js.LICENSE.txt": "/ICU-version2/static/js/2.08f56c4b.chunk.js.LICENSE.txt",
+    "static/media/cty.png": "/ICU-version2/static/media/cty.53544067.png",
+    "static/media/layOut.css": "/ICU-version2/static/media/logo.bd8eedef.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.654a5d1b.js",
+    "static/js/runtime-main.0d3dccbf.js",
     "static/css/2.220ccb42.chunk.css",
-    "static/js/2.dd5df96f.chunk.js",
-    "static/css/main.f83ef316.chunk.css",
-    "static/js/main.95d0e591.chunk.js"
+    "static/js/2.08f56c4b.chunk.js",
+    "static/css/main.4f1d6332.chunk.css",
+    "static/js/main.6e71c396.chunk.js"
   ]
 }

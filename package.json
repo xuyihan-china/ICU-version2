@@ -2,7 +2,7 @@
   "name": "icu-visible",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gitee.com/xuyihan-china/ICU-version2",
+  "homepage": "https://xuyihan-china.gitee.io/ICU-version2",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
